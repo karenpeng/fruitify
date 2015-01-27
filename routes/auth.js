@@ -3,9 +3,9 @@ var shapeways = require('shapeways');
 
 exports.login = function (req, res) {
   var callbackUrl = req.protocol + '://' + req.hostname;
-  if (config.port != 80) {
-    callbackUrl += ':' + config.port;
-  }
+//  if (config.port != 80) {
+//    callbackUrl += ':' + config.port;
+//  }
   callbackUrl += '/callback';
   var client = new shapeways.client({
     consumerKey: config.app.key,
